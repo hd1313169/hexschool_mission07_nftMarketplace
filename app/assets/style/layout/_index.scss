@@ -1,2 +1,8 @@
-
+.navbar-nav{
+    li{
+        &:hover{
+            background-color: #E6553B;
+        }
+    }
+}
 

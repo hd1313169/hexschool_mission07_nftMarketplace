@@ -2,15 +2,6 @@
   box-sizing: border-box;
 }
 
-// iocon設定
-// .fa-solid:before {
-//     content: '\f35a'; /* You should use \ and not /*/
-//     font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
-//     font-style: normal;
-//     font-weight: normal;
-//   }
-// iocon設定END
-
 // logo
 h1{
 	background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week8-202207/logo.svg) no-repeat left center;
@@ -30,31 +21,27 @@ h1{
 // logo END
 
 // 搜尋欄
-.search.active{
-  width: 100%;
+.navbar.hidden{
+  display: none;
 }
 .searchBar{
-  display: block;
-  margin-right: 188px;
+  display: none;
 }
 .searchBar.active{
-  display: none;
-}
-.search-btn-back{
-  display: none;
-}
-.search-btn-back.active{
   display: block;
-}
-.logo.hidden{
-  display: none;
-}
-.hamberger.hidden{
-  display: none;
 }
 // 搜尋欄
 
 
+// 橘色按鈕
+.btn-secondary{
+  background-color: #E6553B;
+
+  &:hover{
+    background-color: black;
+  }
+}
+// 橘色按鈕END
 
 // 客製按鈕
 .btn-customized{
