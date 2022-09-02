@@ -1,0 +1,116 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+// iocon設定
+// .fa-solid:before {
+//     content: '\f35a'; /* You should use \ and not /*/
+//     font-family: "Font Awesome 5 Free"; /* This is the correct font-family*/
+//     font-style: normal;
+//     font-weight: normal;
+//   }
+// iocon設定END
+
+// logo
+h1{
+	background: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a42e625b3e98d0fe8ffa5f9f58096fb8326aa845/week8-202207/logo.svg) no-repeat left center;
+  background-size: cover;
+	width: 85px;
+	height: 18px;
+
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
+
+  @media(min-width: 768px){
+    width: 190px;
+    height: 40px;
+  }
+}
+// logo END
+
+// 搜尋欄
+.search.active{
+  width: 100%;
+}
+.searchBar{
+  display: block;
+  margin-right: 188px;
+}
+.searchBar.active{
+  display: none;
+}
+.search-btn-back{
+  display: none;
+}
+.search-btn-back.active{
+  display: block;
+}
+.logo.hidden{
+  display: none;
+}
+.hamberger.hidden{
+  display: none;
+}
+// 搜尋欄
+
+
+
+// 客製按鈕
+.btn-customized{
+  display: inline-block;
+  position: relative;
+  padding: 4px 48px;
+  border: 1px solid #000;
+  background-color: #f0f0f0;
+  font-family: 'Squada One';
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+
+  &:hover{
+    background-color: #000;
+    color: #fff;
+
+    &::after{
+      border-right: 16px solid #fff;
+    }
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-right: 16px solid #E6553B;
+    border-top: 16px solid transparent;
+  }
+}
+// 客製按鈕END
+
+.text-title{
+  font-family: 'Squada One';
+  font-size: 32px;
+  color: #000;
+
+  @media(min-width: 768px){
+    font-size: 48px;
+  }
+}
+
+.subtitle{
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+
+  @media(min-width: 768px){
+    display: block;
+  }
+}
+
+.ff-s{
+  font-family: "Squada One";
+}
