@@ -14,114 +14,76 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <body>
+
+<body>
   <div class="bg-primary">
   <div class="container">
+
+    <!-- 獨立搜尋列 -->
+    <div class="bg-primary w-100 py-5 searchBar">
+    <form class="d-flex align-items-center">
+      <a href="#" class="btn me-5 searchBar-btn"><i class="fa-solid fa-angle-left"></i></a>
+      <input class="form-control border-0" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="">
+      <a href="#" class="btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </form>
+    </div>
+    <!-- 獨立搜尋列END -->
+
+    <!-- 導覽列 -->
     <nav class="navbar navbar-expand-lg navbar-light py-5">
-
-
+      <div class="col-10 d-flex justify-content-between align-items-center">
       <!-- logo -->
-        <h1 class="logo"><a class="navbar-brand" href="#">ART NFT</a></h1>
+        <h1 class="logo"><a class="navbar-brand" href="./index.html">ART NFT</a></h1>
 
-    <div class="d-flex search">
-        <!-- 搜尋欄 -->
-      <form class="d-flex text-light align-items-center bg-primary ">
-        <a href="#" class="btn search-btn search-btn-back me-5"><i class="fa-solid fa-angle-left"></i></a>
-        <input class="searchBar active form-control border-0" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="Search">
-        <a href="#" class="btn search-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
-      </form>
+      <!-- 搜尋欄 -->
+        <a href="#" class="btn searchBar-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
 
-        <button class="navbar-toggler hamberger border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- 下拉選單 -->
+      <button class="navbar-toggler hamberger border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon text-black"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <li class="nav-item py-8 border-top border-dark">
+              <a class="nav-link active fs-5 fw-bold text-center" aria-current="page" href="#">探索</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item py-8 border-top border-dark">
+              <a class="nav-link active fs-5 fw-bold text-center" aria-current="page" href="#">市值</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item py-3 border border-dark btn-secondary">
+              <a class="nav-link active fs-5 text-center text-white" aria-current="page" href="#">連結錢包</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+
           </ul>
-      </div>
-    </div>
-    </nav>
+        </div>
+      </nav>
+    <!-- 導覽列END -->
+
   </div>
-</div>
 
     
-<p class="text-title ff-s">Ranking</p>
-<a href="#" class="btn-customizes">1</a>
 <div class="container">
+  <div class="row">
+    <div class="col-md-8">
 
-  <i class="fa-solid fa-1 text-info fs-1"></i>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <!-- 第一作 -->
+      <div class="card border-0 mb-10">
+        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art01.jpg" class="card-img-top mb-10" alt="art01">
+          <div class="card-body position-relative">
+              <p class="card-text ff-s fs-5 mb-2">Kemus Wu</p>
+              <h5 class="card-title fs-4 fw-bold mb-8">瞳孔:流動的脈絡</h5>
+              <p class="card-text mb-8">眼睛，總是吸引著我們的注意力，看、被看，也許眼睛裡有著從另一個世界看我們的世界。</p>
+              <a href="#" class="btn rounded-0 btn-customized ff-s fs-5 position-absolute end-0">MORE</a>
+          </div>
       </div>
     </div>
   </div>
 </div>
 
 
-    <footer class="footer">
-      footer
+    <footer class="footer py-5 text-center">
+      © ART NFT. All Rights Reserved
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
@@ -130,6 +92,6 @@
     <script src="https://kit.fontawesome.com/6b74f216f9.js" crossorigin="anonymous"></script>
 
   </div>
-  </body>
+</body>
 
 </html>

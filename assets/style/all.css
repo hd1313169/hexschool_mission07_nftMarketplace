@@ -17335,33 +17335,24 @@ h1, .h1 {
   }
 }
 
-.search.active {
-  width: 100%;
+.navbar.hidden {
+  display: none;
 }
 
 .searchBar {
-  display: block;
-  margin-right: 188px;
+  display: none;
 }
 
 .searchBar.active {
-  display: none;
-}
-
-.search-btn-back {
-  display: none;
-}
-
-.search-btn-back.active {
   display: block;
 }
 
-.logo.hidden {
-  display: none;
+.btn-secondary {
+  background-color: #E6553B;
 }
 
-.hamberger.hidden {
-  display: none;
+.btn-secondary:hover {
+  background-color: black;
 }
 
 .btn-customized {
@@ -17423,6 +17414,10 @@ h1, .h1 {
 
 .ff-s {
   font-family: "Squada One";
+}
+
+.navbar-nav li:hover {
+  background-color: #E6553B;
 }
 
 /*# sourceMappingURL=all.css.map */
