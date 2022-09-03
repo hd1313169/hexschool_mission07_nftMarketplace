@@ -17456,7 +17456,7 @@ h1, .h1 {
 
 .ranking-img {
   width: 87px;
-  height: calc(100% - 2px);
+  height: 100%;
   background-size: cover;
   background-position: center center;
 }
