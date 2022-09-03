@@ -16,11 +16,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
 <body>
-  <div class="bg-primary">
+  <div class="bg-light border-bottom border-dark mb-lg-12">
   <div class="container">
 
+
     <!-- 獨立搜尋列 -->
-    <div class="bg-primary w-100 py-5 searchBar">
+    <div class="bg-light w-100 py-5 searchBar">
     <form class="d-flex align-items-center">
       <a href="#" class="btn me-5 searchBar-btn"><i class="fa-solid fa-angle-left"></i></a>
       <input class="form-control border-0" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="">
@@ -30,29 +31,37 @@
     <!-- 獨立搜尋列END -->
 
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg navbar-light py-5">
-      <div class="col-10 d-flex justify-content-between align-items-center">
-      <!-- logo -->
-        <h1 class="logo"><a class="navbar-brand" href="./index.html">ART NFT</a></h1>
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      
+    <!-- logo -->
+    <div class="col-9 col-md-4 nav-column">
+      <a class="logo" href="./index.html"><h1>ART NFT</h1></a>
+    </div>
 
-      <!-- 搜尋欄 -->
-        <a href="#" class="btn searchBar-btn"><i class="fa-solid fa-magnifying-glass"></i></a>
-      </div>
+    <!-- 搜尋欄 -->
+    <div class="col-md-4">
+      <form class="d-flex align-items-center bg-light px-md-13 nav-column">
+        <input class="form-control border-0 md-only" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="">
+        <a href="#" class="btn md-only"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#" class="btn searchBar-btn sm-only"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </form>
+    </div>
 
-      <!-- 下拉選單 -->
+    <!-- 下拉選單 -->
       <button class="navbar-toggler hamberger border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon text-black"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item py-8 border-top border-dark">
-              <a class="nav-link active fs-5 fw-bold text-center" aria-current="page" href="#">探索</a>
+            <li class="nav-item nav-column btn-white px-md-13 collapse-border">
+              <a class="nav-link active fw-bold text-center" aria-current="page" href="#">探索</a>
             </li>
-            <li class="nav-item py-8 border-top border-dark">
-              <a class="nav-link active fs-5 fw-bold text-center" aria-current="page" href="#">市值</a>
+            <li class="nav-item nav-column btn-white px-md-13 collapse-border">
+              <a class="nav-link active fs-md-6 fw-bold text-center" aria-current="page" href="#">市值</a>
             </li>
-            <li class="nav-item py-3 border border-dark btn-secondary">
-              <a class="nav-link active fs-5 text-center text-white" aria-current="page" href="#">連結錢包</a>
+            <li class="nav-item px-md-13 py-md-12 btn-white">
+              <a class="nav-link active text-center text-black p-0 md-only" aria-current="page" href="#"><i class="fa-solid fa-wallet align-middle"></i></a>
+              <a class="nav-link active text-center text-white sm-only collapse-btn" aria-current="page" href="#">連結錢包</a>
             </li>
 
           </ul>
@@ -61,19 +70,20 @@
     <!-- 導覽列END -->
 
   </div>
-
+</div>
+</div>
     <%- contents %>
 
-    <footer class="footer py-5 text-center">
+    <footer class="bg-light footer py-5 text-center">
       © ART NFT. All Rights Reserved
     </footer>
+  
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/6b74f216f9.js" crossorigin="anonymous"></script>
 
-  </div>
 </body>
 
 </html>
