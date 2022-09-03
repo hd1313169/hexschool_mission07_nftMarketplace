@@ -28,7 +28,7 @@
   --bs-light: #F0F0F0;
   --bs-dark: #808080;
   --bs-black: #000;
-  --bs-font-sans-serif: "Noto Sans TC", "Squada One", "Azeret Mono", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "Noto Sans TC", "Squada One", "Paytone One", "Azeret Mono", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -17184,6 +17184,7 @@ h1, .h1 {
 }
 
 .btn-customized {
+  height: 35px;
   display: inline-block;
   position: relative;
   padding: 4px 48px;
@@ -17196,12 +17197,12 @@ h1, .h1 {
 }
 
 .btn-customized:hover {
-  background-color: #000;
+  background-color: #E6553B;
   color: #fff;
 }
 
 .btn-customized:hover::after {
-  border-right: 16px solid #fff;
+  border-right: 16px solid #000;
 }
 
 .btn-customized::after {
@@ -17250,7 +17251,71 @@ h1, .h1 {
 }
 
 .ff-s {
-  font-family: "Squada One";
+  font-family: 'Squada One';
+}
+
+.ff-p {
+  font-family: 'Paytone One';
+}
+
+.img-hover {
+  position: relative;
+}
+
+.img-hover:hover::before {
+  content: 'more';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: .6;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-hover:hover::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-right: 16px solid #E6553B;
+  border-top: 16px solid transparent;
+}
+
+.double-line {
+  position: relative;
+}
+
+.double-line:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  top: -8px;
+  left: 0;
+}
+
+.double-line:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  bottom: -8px;
+  left: 0;
 }
 
 .nav-column {
@@ -17262,15 +17327,16 @@ h1, .h1 {
   .nav-column {
     border-right: 1px solid black;
     padding: 40px 0;
+    height: 120px;
   }
 }
 
-.md-only {
+.lg-only {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .md-only {
+  .lg-only {
     display: block;
   }
 }
@@ -17313,6 +17379,7 @@ h1, .h1 {
 
 @media (min-width: 992px) {
   .recommend-item-sm {
+    height: 340px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -17336,6 +17403,86 @@ h1, .h1 {
         -ms-writing-mode: tb-lr;
             writing-mode: vertical-lr;
   }
+}
+
+.recommend-img-1 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art01.jpg);
+  width: 100%;
+  height: 372px;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 992px) {
+  .recommend-img-1 {
+    width: 100%;
+    height: 500px;
+  }
+}
+
+.recommend-img-2 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art02.jpg);
+  width: 100%;
+  height: 372px;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 992px) {
+  .recommend-img-2 {
+    width: 50%;
+    height: 340px;
+  }
+}
+
+.recommend-img-3 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art03.jpg);
+  width: 100%;
+  height: 372px;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 992px) {
+  .recommend-img-3 {
+    width: 50%;
+    height: 340px;
+  }
+}
+
+.ranking-item {
+  height: 91px;
+}
+
+.ranking-img {
+  width: 87px;
+  height: calc(100% - 2px);
+  background-size: cover;
+  background-position: center center;
+}
+
+.ranking-img-1 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art04.jpg);
+}
+
+.ranking-img-2 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art05.jpg);
+}
+
+.ranking-img-3 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art06.jpg);
+}
+
+.ranking-img-4 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art07.jpg);
+}
+
+.ranking-img-5 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art08.jpg);
+}
+
+.ranking-img-6 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art09.jpg);
 }
 
 /*# sourceMappingURL=all.css.map */

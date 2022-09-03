@@ -13,12 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
 <body>
   <div class="bg-light border-bottom border-dark mb-lg-12">
   <div class="container">
-
 
     <!-- 獨立搜尋列 -->
     <div class="bg-light w-100 py-5 searchBar">
@@ -41,8 +41,8 @@
     <!-- 搜尋欄 -->
     <div class="col-md-4">
       <form class="d-flex align-items-center bg-light px-md-13 nav-column">
-        <input class="form-control border-0 md-only" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="">
-        <a href="#" class="btn md-only"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <input class="form-control border-0 lg-only" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="">
+        <a href="#" class="btn lg-only"><i class="fa-solid fa-magnifying-glass"></i></a>
         <a href="#" class="btn searchBar-btn sm-only"><i class="fa-solid fa-magnifying-glass"></i></a>
       </form>
     </div>
@@ -60,7 +60,7 @@
               <a class="nav-link active fs-md-6 fw-bold text-center" aria-current="page" href="#">市值</a>
             </li>
             <li class="nav-item px-md-13 py-md-12 btn-white">
-              <a class="nav-link active text-center text-black p-0 md-only" aria-current="page" href="#"><i class="fa-solid fa-wallet align-middle"></i></a>
+              <a class="nav-link active text-center text-black p-0 lg-only" aria-current="page" href="#"><i class="fa-solid fa-wallet align-middle"></i></a>
               <a class="nav-link active text-center text-white sm-only collapse-btn" aria-current="page" href="#">連結錢包</a>
             </li>
 
@@ -74,8 +74,10 @@
 </div>
     <div class="bg-white">
   <div class="container">
+
+    <!-- 推薦系列 -->
       <!-- 推薦一 -->
-      <div class="recommend-item card">
+      <div class="recommend-item border-bottom-0 card">
 
       <div class="row g-0">
 
@@ -84,10 +86,10 @@
             <h2 class="fs-1 ff-s m-0 mb-md-5">Recommend</h2>
             <p class="fs-5 fw-bold m-0">推 薦 系 列</p>
           </div>
-          <div>
-          <img class="card-img-top mb-10 mb-md-0 h-100" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art01.jpg" alt="art01">
+          <div class="recommend-img-1 mb-10 mb-md-0">
+            <a href="#" class="d-block img-hover w-100 h-100"></a>
+          </div>  
           </div>
-        </div>
         
         <div class="col-lg-4 card-body pt-md-18 px-md-8 pb-md-8">
           <div class="position-relative h-100">
@@ -100,16 +102,16 @@
         </div>
       </div>
       
-    <div class="row g-0">
+    <div class="row g-0 mb-12 mb-lg-18">
     
     <!-- 推薦二 -->
     <div class="col-lg-6">
   
-      <div class="recommend-item card h-100">
+      <div class="recommend-item border-end-0 card h-100">
       <div class="row g-0 recommend-item-sm">
         
-        <div class="col-lg-6">
-          <img class="card-img-top mb-10 mb-md-0 h-100" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art02.jpg" alt="art01">
+        <div class="col-lg-6 recommend-img-2 mb-10 mb-md-0">
+          <a href="#" class="d-block img-hover w-100 h-100"></a>
         </div>  
       
         <div class="col-lg-6 card-body pt-md-13 px-md-8 pb-md-8">
@@ -131,8 +133,8 @@
       <div class="recommend-item card h-100">
       <div class="row g-0 recommend-item-sm">
         
-        <div class="col-lg-6">
-          <img class="card-img-top mb-10 mb-md-0 h-100" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art03.jpg" alt="art01">
+        <div class="col-lg-6 recommend-img-3 mb-10 mb-md-0">
+          <a href="#" class="d-block img-hover w-100 h-100"></a>
         </div>  
       
         <div class="col-lg-6 card-body pt-md-13 px-md-8 pb-md-8">
@@ -147,26 +149,231 @@
       </div>
       </div>
     </div>
+    </div>
+    <!-- 推薦系列END -->
 
+    <!-- 排名 -->
+    <!-- 排名標題 -->
+    <div class="ranking-title d-flex justify-content-between align-items-end w-100 border-bottom mb-8 mb-lg-13">
+      <div class="d-flex align-items-center">
+        <h2 class="fs-1 ff-s me-md-5">Ranking</h2>
+        <p class="fs-5 fw-bold lg-only">市價排行榜</p>
+      </div>
+      <a href="#" class="btn btn-customized ff-s fs-5 border-0">MORE</a>
     </div>
 
+  <div class="row">
+    <!-- 排名1 -->
+    <div class="col-lg-4">
+    <div class="ranking-item d-flex border mb-5">
 
+      <p class="ff-p fs-4 border-end px-2 py-8">1</p>
 
+      <a href="#" class="d-block img-hover border-end"><div class="ranking-img ranking-img-1"></div></a>
 
+      <div class="d-flex flex-column justify-content-between w-100">
 
+        <h6 class="fw-bold border-bottom px-2 py-5 m-0">散步遇到的女人</h6>
 
-
-
-
-
-
-
-
-
-
-
-
+        <div class="d-flex justify-content-between align-items-center p-2">
+          <p>Zoe Jiang</p>
+          <div class="d-flex align-items-center">
+            <i class="fa-brands fa-ethereum me-2"></i>
+            <p class="ff-s">300</p>
+          </div>
+        </div>
+      </div>
     </div>
+    </div>
+
+    <!-- 排名2 -->
+    <div class="col-lg-4">
+    <div class="ranking-item d-flex border mb-5">
+
+      <p class="ff-p fs-4 border-end px-2 py-8">2</p>
+
+      <a href="#" class="d-block img-hover border-end"><div class="ranking-img ranking-img-2"></div></a>
+
+      <div class="d-flex flex-column justify-content-between w-100">
+
+        <h6 class="fw-bold border-bottom px-2 py-5 m-0">爆炸頭的母親</h6>
+
+        <div class="d-flex justify-content-between align-items-center p-2">
+          <p>Yui</p>
+          <div class="d-flex align-items-center">
+            <i class="fa-brands fa-ethereum me-2"></i>
+            <p class="ff-s">300</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  <!-- 排名3 -->
+    <div class="col-lg-4">
+    <div class="ranking-item d-flex border mb-5">
+
+      <p class="ff-p fs-4 border-end px-2 py-8">3</p>
+
+      <a href="#" class="d-block img-hover border-end"><div class="ranking-img ranking-img-3"></div></a>
+
+      <div class="d-flex flex-column justify-content-between w-100">
+
+        <h6 class="fw-bold border-bottom px-2 py-5 m-0">夏天的時候</h6>
+
+        <div class="d-flex justify-content-between align-items-center p-2">
+          <p>Bug Lin</p>
+          <div class="d-flex align-items-center">
+            <i class="fa-brands fa-ethereum me-2"></i>
+            <p class="ff-s">300</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <!-- 排名4 -->
+    <div class="col-lg-4">
+    <div class="ranking-item d-flex border mb-5">
+
+      <p class="ff-p fs-4 border-end px-2 py-8">4</p>
+
+      <a href="#" class="d-block img-hover border-end"><div class="ranking-img ranking-img-4"></div></a>
+
+      <div class="d-flex flex-column justify-content-between w-100">
+
+        <h6 class="fw-bold border-bottom px-2 py-5 m-0">追求者送我的花</h6>
+
+        <div class="d-flex justify-content-between align-items-center p-2">
+          <p>Michael</p>
+          <div class="d-flex align-items-center">
+            <i class="fa-brands fa-ethereum me-2"></i>
+            <p class="ff-s">300</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- 排名5 -->
+    <div class="col-lg-4">
+    <div class="ranking-item d-flex border mb-5">
+
+      <p class="ff-p fs-4 border-end px-2 py-8">5</p>
+
+      <a href="#" class="d-block img-hover border-end"><div class="ranking-img ranking-img-5"></div></a>
+
+      <div class="d-flex flex-column justify-content-between w-100">
+
+        <h6 class="fw-bold border-bottom px-2 py-5 m-0">今天釣到的魚</h6>
+
+        <div class="d-flex justify-content-between align-items-center p-2">
+          <p>Wei JJ</p>
+          <div class="d-flex align-items-center">
+            <i class="fa-brands fa-ethereum me-2"></i>
+            <p class="ff-s">300</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- 排名6 -->
+    <div class="col-lg-4">
+    <div class="ranking-item d-flex border mb-12 mb-lg-18">
+
+      <p class="ff-p fs-4 border-end px-2 py-8">6</p>
+
+      <a href="#" class="d-block img-hover border-end"><div class="ranking-img ranking-img-6"></div></a>
+
+      <div class="d-flex flex-column justify-content-between w-100">
+
+        <h6 class="fw-bold border-bottom px-2 py-5 m-0">人生中的貓咪們</h6>
+
+        <div class="d-flex justify-content-between align-items-center p-2">
+          <p>Even Lai</p>
+          <div class="d-flex align-items-center">
+            <i class="fa-brands fa-ethereum me-2"></i>
+            <p class="ff-s">300</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- 加入我們 -->
+  <h2 class="fs-1 ff-s text-center mb-5">Join Us</h2>    
+  <p class="fs-5 fw-bold text-center mb-12">創建並出售你的藝術品</p>
+  
+  <div class="border-top border-bottom double-line">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="text-center py-13 py-mb-18">
+            <i class="fa-solid fa-wallet display-6 text-primary mb-5"></i>
+            <h5 class="fw-bold mb-8">設置你的錢包</h5>
+            <p>設置好您選擇的錢包後 <br>點擊右上角的錢包圖標進行連接</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="text-center py-13 py-mb-18">
+            <i class="fa-solid fa-pen-ruler display-6 text-primary mb-5"></i>
+            <h5 class="fw-bold mb-8">創建您的主頁</h5>
+            <p>註冊成為會員，編輯您的資料 <br>讓大家了解你</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="text-center py-13 py-mb-18">
+            <i class="fa-solid fa-icons display-6 text-primary mb-5"></i>
+            <h5 class="fw-bold mb-8">添加你的 NFT</h5>
+            <p>上傳你的作品 <br>添加標題和描述</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="text-center py-13 py-mb-18">
+            <i class="fa-solid fa-tag display-6 text-primary mb-5"></i>
+            <h5 class="fw-bold mb-8">列出它們出售</h5>
+            <p>選擇出售 NFT 的方式 <br>並設定價格，等待有緣人</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+<!-- 加入我們END -->
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
 
 
