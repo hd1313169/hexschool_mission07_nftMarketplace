@@ -4,7 +4,6 @@ layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
-<div class="bg-white">
   <div class="container">
 
     <!-- 推薦系列 -->
@@ -84,7 +83,7 @@ current: index
     </div>
     <!-- 推薦系列END -->
 
-    <!-- 排名 -->
+  <!-- 排名 -->
     <!-- 排名標題 -->
     <div class="ranking-title d-flex justify-content-between align-items-end w-100 border-bottom mb-8 mb-lg-13">
       <div class="d-flex align-items-center">
@@ -99,7 +98,7 @@ current: index
   <div class="row">
     <!-- 排名1 -->
     <div class="col-lg-4">
-    <div class="ranking-item d-flex border mb-5">
+    <div class="ranking-item d-flex border mb-5 bg-white">
 
       <p class="ff-p fs-4 border-end px-2 py-8">1</p>
 
@@ -122,7 +121,7 @@ current: index
 
     <!-- 排名2 -->
     <div class="col-lg-4">
-    <div class="ranking-item d-flex border mb-5">
+    <div class="ranking-item d-flex border mb-5 bg-white">
 
       <p class="ff-p fs-4 border-end px-2 py-8">2</p>
 
@@ -145,7 +144,7 @@ current: index
 
   <!-- 排名3 -->
     <div class="col-lg-4">
-    <div class="ranking-item d-flex border mb-5">
+    <div class="ranking-item d-flex border mb-5 bg-white">
 
       <p class="ff-p fs-4 border-end px-2 py-8">3</p>
 
@@ -175,7 +174,7 @@ current: index
 
   <!-- 排名一 -->
   <div class="col-lg-4">
-    <div class="ranking-item-lg border mb-5 mb-lg-8 position-relative">
+    <div class="ranking-item-lg border mb-5 mb-lg-8 position-relative bg-white">
   
       <p class="ff-p fs-2 text-center border ranking-tag">1</p>
   
@@ -198,7 +197,7 @@ current: index
 
   <!-- 排名二 -->
   <div class="col-lg-4">
-    <div class="ranking-item-lg border mb-5 mb-lg-8 position-relative">
+    <div class="ranking-item-lg border mb-5 mb-lg-8 position-relative bg-white">
   
       <p class="ff-p fs-2 text-center border ranking-tag">2</p>
   
@@ -221,7 +220,7 @@ current: index
 
   <!-- 排名三 -->
   <div class="col-lg-4">
-    <div class="ranking-item-lg border mb-5 mb-lg-8 position-relative">
+    <div class="ranking-item-lg border mb-5 mb-lg-8 position-relative bg-white">
   
       <p class="ff-p fs-2 text-center border ranking-tag">3</p>
   
@@ -252,7 +251,7 @@ current: index
   <div class="row">
     <!-- 排名4 -->
     <div class="col-lg-4">
-    <div class="ranking-item d-flex border mb-5">
+    <div class="ranking-item d-flex border mb-5 bg-white">
 
       <p class="ff-p fs-4 border-end px-2 py-8">4</p>
 
@@ -275,7 +274,7 @@ current: index
 
     <!-- 排名5 -->
     <div class="col-lg-4">
-    <div class="ranking-item d-flex border mb-5">
+    <div class="ranking-item d-flex border mb-5 bg-white">
 
       <p class="ff-p fs-4 border-end px-2 py-8">5</p>
 
@@ -298,7 +297,7 @@ current: index
 
     <!-- 排名6 -->
     <div class="col-lg-4">
-    <div class="ranking-item d-flex border mb-12 mb-lg-18">
+    <div class="ranking-item d-flex border mb-12 mb-lg-18 bg-white">
 
       <p class="ff-p fs-4 border-end px-2 py-8">6</p>
 
@@ -320,9 +319,159 @@ current: index
     </div>
   </div>
 <!-- 第二列END -->
+</div>
 
+<!-- 藝術家 -->
+<!-- 藝術家標題 -->
+<div class="container">
+  <div class="d-flex justify-content-between align-items-end w-100 border-bottom mb-8 mb-lg-13">
+    <div class="d-flex align-items-center">
+      <h2 class="fs-1 ff-s me-md-5">Artist</h2>
+      <p class="fs-5 fw-bold md-only">熱門藝術家</p>
+    </div>
+    <a href="#" class="btn btn-customized ff-s fs-5 border-0">MORE</a>
+  </div>
+
+  <div class="sm-only">
+  <!-- 手機版滾動卡片 -->
+  <div class="swiper artistSwiper mb-12">
+    <div class="swiper-wrapper mb-8">
+
+      <!-- 藝術家一 -->
+      <div class="swiper-slide">
+        <div class="artist-item">
+
+        <a href="#" class="d-block mb-5">
+          <div class="artist-img artist-img-1 position-relative">
+          <h3 class="ff-s fs-2 text-white artist-tag">Even Lai</h3>
+          <a href="#" class="btn btn-customized ff-s fs-5 position-absolute artist-btn">MORE</a>
+          </div>
+        </a>
+    
+        <p class="p-8 position-relative">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+        
+        </div>
+      </div>
+
+      <!-- 藝術家二 -->
+      <div class="swiper-slide">
+        <div class="artist-item">
+
+        <a href="#" class="d-block mb-5">
+          <div class="artist-img artist-img-2 position-relative">
+          <h3 class="ff-s fs-2 text-white artist-tag">Antony Wu</h3>
+          <a href="#" class="btn btn-customized ff-s fs-5 position-absolute artist-btn">MORE</a>
+          </div>
+        </a>
+    
+        <p class="p-8 position-relative">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+        
+        </div>
+      </div>
+
+      <!-- 藝術家三 -->
+      <div class="swiper-slide">
+        <div class="artist-item">
+
+        <a href="#" class="d-block mb-5">
+          <div class="artist-img artist-img-3 position-relative">
+          <h3 class="ff-s fs-2 text-white artist-tag">Wei JJ</h3>
+          <a href="#" class="btn btn-customized ff-s fs-5 position-absolute artist-btn">MORE</a>
+          </div>
+        </a>
+    
+        <p class="p-8 position-relative">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+        
+        </div>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+    
+  </div>
+    <!-- 手機版滾動卡片END -->
+  </div>
+
+<div class="md-only">
+  <!-- 電腦版滾動卡片 -->
+  <div class="swiper artistSwiperMd mb-12">
+    <div class="swiper-wrapper mb-8">
+      
+      <!-- 藝術家一 -->
+      <div class="swiper-slide">
+        <div class="artist-item">
+
+        <a href="#" class="d-block mb-5">
+          <div class="artist-img artist-img-1 position-relative">
+          <h3 class="ff-s fs-1 text-white artist-tag">Even <br>Lai</h3>
+          <a href="#" class="btn btn-customized ff-s fs-5 position-absolute artist-btn">MORE</a>
+          </div>
+        </a>
+    
+        <p class="p-8 position-relative">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+        
+        </div>
+      </div>
+
+      <!-- 藝術家二 -->
+      <div class="swiper-slide">
+        <div class="artist-item">
+
+        <a href="#" class="d-block mb-5">
+          <div class="artist-img artist-img-2 position-relative">
+          <h3 class="ff-s fs-1 text-white artist-tag">Antony <br>Wu</h3>
+          <a href="#" class="btn btn-customized ff-s fs-5 position-absolute artist-btn">MORE</a>
+          </div>
+        </a>
+    
+        <p class="p-8 position-relative">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+        
+        </div>
+      </div>
+
+      <!-- 藝術家三 -->
+      <div class="swiper-slide">
+        <div class="artist-item">
+
+        <a href="#" class="d-block mb-5">
+          <div class="artist-img artist-img-3 position-relative">
+          <h3 class="ff-s fs-1 text-white artist-tag">Wei <br>JJ</h3>
+          <a href="#" class="btn btn-customized ff-s fs-5 position-absolute artist-btn">MORE</a>
+          </div>
+        </a>
+    
+        <p class="p-8 position-relative">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+        
+        </div>
+      </div>
+
+      <!-- 藝術家四 -->
+      <div class="swiper-slide">
+        <div class="artist-item">
+
+        <a href="#" class="d-block mb-5">
+          <div class="artist-img artist-img-4 position-relative">
+          <h3 class="ff-s fs-1 text-white artist-tag">Michelle</h3>
+          <a href="#" class="btn btn-customized ff-s fs-5 position-absolute artist-btn">MORE</a>
+          </div>
+        </a>
+    
+        <p class="p-8 position-relative">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+        
+        </div>
+      </div>
+
+    </div>
+
+    <div class="swiper-pagination"></div>
+    
+  </div>
+    <!-- 電腦版滾動卡片END -->
+</div>
 
 </div>
+
 
 <!-- 加入我們 -->
   <h2 class="fs-1 ff-s text-center mb-5">Join Us</h2>    
@@ -370,26 +519,3 @@ current: index
   </div>
 <!-- 加入我們END -->
 
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
