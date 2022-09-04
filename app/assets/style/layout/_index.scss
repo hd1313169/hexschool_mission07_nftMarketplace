@@ -134,3 +134,22 @@
         background-image: url(https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/week8-202207/art09.jpg);
     }
 }
+
+
+.ranking-img-lg{
+    height: 374px;
+    background-size: cover;
+    background-position: top center;
+}
+
+.ranking-tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 48px; 
+    height: 48px;
+    background-color: #fff;
+    vertical-align: middle;
+    margin: -1px;
+}
