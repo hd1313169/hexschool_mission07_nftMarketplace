@@ -90,31 +90,12 @@
 
 </div>
 
-<!-- Initialize Swiper -->
 <script>
   var swiper = new Swiper(".artistSwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
-</script>
-<!-- <script>
-  var swiper = new Swiper(".artistSwiperMd", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    freeMode: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-</script> -->
-<script>
-  var swiper = new Swiper(".artistSwiperMd", {
-    effect: "coverflow",
+    effect: "slide",
     grabCursor: true,
-    centeredSlides: false,
-    slidesPerView: "3",
+    centeredSlides: true,
+    // slidesPerView: "3",
     coverflowEffect: {
       rotate: 50,
       stretch: 0,
@@ -122,8 +103,31 @@
       modifier: 1,
       slideShadows: false,
     },
+
+    breakpoints: {
+      // when window width is >= 320px
+      576: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 1,
+        spaceBetween: 0
+      },
+      // when window width is >= 992px
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 24
+      }
+    },
+
     pagination: {
       el: ".swiper-pagination",
+    },
+
+    autoplay: {
+    delay: 2000,
     },
   });
 </script>
