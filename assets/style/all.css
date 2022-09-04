@@ -17503,4 +17503,118 @@ h1, .h1 {
   margin: -1px;
 }
 
+.artist-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+}
+
+@media (min-width: 992px) {
+  .artist-tag {
+    top: 24px;
+    left: 24px;
+  }
+}
+
+.artist-img {
+  width: 100%;
+  height: 232px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.artist-img-1 {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist01.jpg?raw=true);
+}
+
+.artist-img-2 {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist02.jpg?raw=true);
+}
+
+.artist-img-3 {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist03.jpg?raw=true);
+}
+
+.artist-img-4 {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist04.jpg?raw=true);
+}
+
+.artist-img-5 {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist05.jpg?raw=true);
+}
+
+.artist-img-6 {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist06.jpg?raw=true);
+}
+
+.artist-btn {
+  right: 8px;
+  bottom: 8px;
+  z-index: 2;
+}
+
+@media (min-width: 992px) {
+  .artist-btn {
+    right: 24px;
+    bottom: 24px;
+  }
+}
+
+.artist-content {
+  left: 24px;
+  bottom: 24px;
+}
+
+@media (min-width: 992px) {
+  .artist-content {
+    right: 24px;
+    bottom: 24px;
+  }
+}
+
+.artist-swiper {
+  width: 100%;
+  height: 40px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  background-color: #000 !important;
+  border-radius: 0% !important;
+  opacity: 100% !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #E6553B !important;
+  width: 16px !important;
+}
+
 /*# sourceMappingURL=all.css.map */
