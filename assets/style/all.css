@@ -17161,6 +17161,26 @@ h1, .h1 {
   }
 }
 
+.md-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .md-only {
+    display: block;
+  }
+}
+
+.sm-only {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .sm-only {
+    display: none;
+  }
+}
+
 .navbar.hidden {
   display: none;
 }
@@ -17328,26 +17348,6 @@ h1, .h1 {
     border-right: 1px solid black;
     padding: 40px 0;
     height: 120px;
-  }
-}
-
-.lg-only {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .lg-only {
-    display: block;
-  }
-}
-
-.sm-only {
-  display: block;
-}
-
-@media (min-width: 768px) {
-  .sm-only {
-    display: none;
   }
 }
 
