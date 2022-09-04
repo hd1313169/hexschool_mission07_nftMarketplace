@@ -9,21 +9,6 @@
     }
 }
 
-.lg-only{
-    display: none;
-
-    @media(min-width: 768px){
-        display: block;
-    }
-}
-
-.sm-only{
-    display: block;
-
-    @media(min-width: 768px){
-        display: none;
-    }
-}
 
 .collapse-border{
     
