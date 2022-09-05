@@ -17649,4 +17649,10 @@ h1, .h1 {
   width: 16px !important;
 }
 
+@media (min-width: 992px) {
+  .newPieces-content {
+    border-bottom: 1px solid black;
+  }
+}
+
 /*# sourceMappingURL=all.css.map */
