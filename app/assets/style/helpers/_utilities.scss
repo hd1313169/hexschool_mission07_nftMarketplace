@@ -29,6 +29,14 @@ h1{
 
 // RWD
 
+.lg-only{
+  display: none;
+
+  @media(min-width: 992px){
+      display: block;
+  }
+}
+
 .md-only{
   display: none;
 
@@ -178,8 +186,9 @@ h1{
 }
 
 // 雙線裝飾
-.double-line{
+.double-line-top{
   position: relative;
+  border-top: 1px solid black;
 
   &:before{
     position: absolute;
@@ -190,14 +199,19 @@ h1{
     top: -8px;
     left: 0;
   }
+}
+
+.double-line-bottom{
+  position: relative;
+  border-top: 4px solid black;
 
   &:after{
     position: absolute;
     content: "";
     width: 100%;
-    height: 4px;
+    height: 1px;
     background-color: #000;
-    bottom: -8px;
+    top: -8px;
     left: 0;
   }
 }

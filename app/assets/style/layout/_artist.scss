@@ -1,0 +1,18 @@
+.artist-intro{
+    @media(min-width: 992px){
+        height: 312px;
+    }
+}
+
+.artist-avatar{
+    width: 100%;
+    height: 213px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist01.jpg?raw=true);
+
+    @media(min-width: 992px){
+        height: 312px;
+    }
+
+}
