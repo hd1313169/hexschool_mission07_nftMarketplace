@@ -9,7 +9,6 @@
     }
 }
 
-
 .collapse-border{
     
     border-top: 1px solid black;
@@ -274,4 +273,11 @@
         width: 16px !important;
     }
   }
+}
+
+.newPieces-content{
+
+    @media(min-width: 992px){
+        border-bottom: 1px solid black;
+    }
 }

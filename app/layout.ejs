@@ -45,7 +45,7 @@
     <!-- 搜尋欄 -->
     <div class="col-md-4">
       <form class="d-flex align-items-center bg-light px-md-13 nav-column">
-        <input class="form-control border-0 md-only" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="">
+        <input class="form-control border-0 bg-light md-only" type="search" placeholder="搜尋作品名稱、藝術家名稱" aria-label="">
         <a href="#" class="btn md-only"><i class="fa-solid fa-magnifying-glass"></i></a>
         <a href="#" class="btn searchBar-btn sm-only"><i class="fa-solid fa-magnifying-glass"></i></a>
       </form>
@@ -56,7 +56,7 @@
           <span class="navbar-toggler-icon text-black"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-light">
             <li class="nav-item nav-column btn-white px-md-13 collapse-border">
               <a class="nav-link active fw-bold text-center" aria-current="page" href="#">探索</a>
             </li>
@@ -64,7 +64,7 @@
               <a class="nav-link active fs-md-6 fw-bold text-center" aria-current="page" href="#">市值</a>
             </li>
             <li class="nav-item px-md-13 py-md-12 btn-white">
-              <a class="nav-link active text-center text-black p-0 md-only" aria-current="page" href="#"><i class="fa-solid fa-wallet align-middle"></i></a>
+              <a class="nav-link active text-center p-0 md-only" aria-current="page" href="#"><i class="fa-solid fa-wallet fs-3"></i></a>
               <a class="nav-link active text-center text-white sm-only collapse-btn" aria-current="page" href="#">連結錢包</a>
             </li>
 
@@ -80,13 +80,16 @@
     <footer class="bg-light footer py-5 text-center">
       © ART NFT. All Rights Reserved
     </footer>
-  
+
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/6b74f216f9.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 
 </div>
 
@@ -130,6 +133,12 @@
     delay: 2000,
     },
   });
+</script>
+
+<script>
+  $('.newPieces').imagesLoaded().progress( function() {
+  $('.newPieces').masonry(); 
+});
 </script>
 </body>
 
