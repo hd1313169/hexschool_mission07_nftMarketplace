@@ -79,9 +79,9 @@
     <div class="row">
       <div class="col-12 col-lg-9">
 
-        <div class="card mb-5 mb-lg-0">
+        <div class="card mb-5 mb-lg-0 h-100">
           <div class="row g-0">
-          <div class="col-lg-5 h-100">
+          <div class="col-lg-5">
             <div class="card-img-top artist-avatar border"></div>
           </div>
         <div class="col-lg-7">
@@ -106,31 +106,93 @@
       </div>
 
       
-      <div class="col-12 col-lg-3">
-        <div class="d-flex justify-content-between align-items-center px-8 py-5 border border-bottom-0 ">
-          <div class="fw-bold">販售中</div>
-          <h4 class="fs-2 ff-s">168</h4>
-        </div>
-        <div class="d-flex justify-content-between align-items-center px-8 py-5 border border-bottom-0">
-          <div class="fw-bold">地板價格</div>
-          <h4 class="fs-2 ff-s">0.6 <span class="fs-4">ETH</span></h4>
-        </div>
-        <div class="d-flex justify-content-between align-items-center px-8 py-5 border border-bottom-0">
-          <div class="fw-bold">7 日成交</div>
-          <h4 class="fs-2 ff-s">8.8 <span class="fs-4">ETH</span></h4>
-        </div>
-        <div class="d-flex justify-content-between align-items-center px-8 py-5 border">
-          <div class="fw-bold">30 日成交</div>
-          <h4 class="fs-2 ff-s">23.1 <span class="fs-4">ETH</span></h4>
-        </div>
-
+      <div class="col-12 col-lg-3 ">
+        <ul class="m-0 p-0 artist-nav">
+        <li class="d-block border border-bottom-0">
+          <a href="#" class="btn px-8 py-5 d-flex justify-content-between align-items-center text-decoration-none">
+            <div class="fw-bold">販售中</div>
+            <h4 class="fs-2 ff-s">168</h4>
+          </a>
+        </li>
+        <li class="d-block border border-bottom-0">
+           <a href="#" class="btn px-8 py-5 d-flex justify-content-between align-items-center text-decoration-none">
+            <div class="fw-bold">地板價格</div>
+            <h4 class="fs-2 ff-s">0.6 <span class="fs-4">ETH</span></h4>
+          </a>
+        </li>
+        <li class="d-block border border-bottom-0">
+            <a href="#" class="btn px-8 py-5 d-flex justify-content-between align-items-center text-decoration-none">
+            <div class="fw-bold">7 日成交</div>
+            <h4 class="fs-2 ff-s">8.8 <span class="fs-4">ETH</span></h4>
+          </a>
+        </li>
+        <li class="d-block border">
+          <a href="#" class="btn px-8 py-5 d-flex justify-content-between align-items-center text-decoration-none">
+            <div class="fw-bold">30 日成交</div>
+            <h4 class="fs-2 ff-s">23.1 <span class="fs-4">ETH</span></h4>
+          </a>
+        </li>
+      </ul>
       </div>
     </div>
   </div>
 </div>
 
+<div class="container">
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs artist-artworks mb-8 mb-lg-12" id="myTab" role="tablist">
+    <li class="nav-item " role="presentation">
+      <button class="nav-link active fs-1 ff-s artist-artworks-title" id="artWorks-tab" data-bs-toggle="tab" data-bs-target="#artWorks" type="button" role="tab" aria-controls="home" aria-selected="true">Art Works <span class="fs-5 fw-bold">系列作品</span></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link fs-1 ff-s artist-artworks-title" id="collection-tab" data-bs-toggle="tab" data-bs-target="#collection" type="button" role="tab" aria-controls="profile" aria-selected="false">Collection <span class="fs-5 fw-bold">收藏品</span></button>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content mb-13 mb-lg-25">
+    <!-- 作品分頁 -->
+    <div class="tab-pane active" id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
+      <div class="card px-5 py-10 border mb-5">
+        <div class="triangle-left-top"></div>
+          <div class="triangle-right-top"></div>
+          <div class="card-body p-0">
+            <h3 class="card-title mb-5">追求者送我的花</h3>
+            <p class="mb-8">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg?raw=true" class="card-img-top border border-10 mb-5" alt="追求者送我的花系列">
+            <div class="d-flex justify-content-center">
+              <a href="#" class="btn btn-customized ff-s fs-5 ">MORE</a>
+            </div>
+        </div>
+      </div>
+      <div class="card px-5 py-10 border">
+        <div class="triangle-left-top"></div>
+          <div class="triangle-right-top"></div>
+          <div class="card-body p-0">
+            <h3 class="card-title mb-5">我家窗前的鳥</h3>
+            <p class="mb-8">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。  </p>
+            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art20.jpg?raw=true" class="card-img-top border border-10 mb-5" alt="追求者送我的花系列">
+            <div class="d-flex justify-content-center">
+              <a href="#" class="btn btn-customized ff-s fs-5 ">MORE</a>
+            </div>
+        </div>
+      </div>    
+    </div>
+    <!-- 作品分頁END -->
+   
+    <!-- 收藏分頁 -->
+    <div class="tab-pane" id="collection" role="tabpanel" aria-labelledby="profile-tab">
+      <h3>夏娃的醜聞</h3>
+    </div>
+    <!-- 收藏分頁END -->
+
+  </div>
+</div>
 
 
+<div class="container">
+
+</div>
 
 
 
