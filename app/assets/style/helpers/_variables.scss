@@ -274,6 +274,8 @@ $spacers: (
   19: $spacer * 5.25, // 84px
   20: $spacer * 5.5, // 88px
   21: $spacer * 6, // 96px
+  25: $spacer * 8.5, // 136px
+
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -383,7 +385,13 @@ $border-widths: (
   2: 2px,
   3: 3px,
   4: 4px,
-  5: 5px
+  5: 5px,
+  6: 6px,
+  7: 7px,
+  8: 8px,
+  9: 9px,
+  10: 10px,
+
 ) !default;
 
 $border-color:                $black !default;

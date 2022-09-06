@@ -215,3 +215,25 @@ h1{
     left: 0;
   }
 }
+
+.triangle-left-top{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    margin: -1px;
+    border-top: 16px solid black;
+    border-right: 16px solid transparent;
+}
+
+.triangle-right-top{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    margin: -1px;
+    border-top: 16px solid black;
+    border-left: 16px solid transparent;
+}

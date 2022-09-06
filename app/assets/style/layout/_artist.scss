@@ -1,9 +1,3 @@
-.artist-intro{
-    @media(min-width: 992px){
-        height: 312px;
-    }
-}
-
 .artist-avatar{
     width: 100%;
     height: 213px;
@@ -12,7 +6,37 @@
     background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/artist01.jpg?raw=true);
 
     @media(min-width: 992px){
-        height: 312px;
+        height: 100%;
     }
+}
 
+.artist-nav{
+    li a{
+        &:hover{
+            background-color: #E6553B;
+            color: white;
+        }
+    }
+}
+
+.nav-link{
+    color: #808080;
+    span{
+        display: none;
+        @media(min-width: 992px){
+            display: inline-block;
+        }
+    
+    }
+}
+
+.nav-tabs.artist-artworks{
+    .nav-link{
+        &:hover{
+            color: #E6553B;
+        }
+    }
+    .nav-link.active{
+        color: black;
+    }
 }
