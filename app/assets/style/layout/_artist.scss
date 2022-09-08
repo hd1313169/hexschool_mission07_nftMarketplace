@@ -18,7 +18,11 @@
         }
     }
 }
-
+.social-link{
+    &:hover{
+        color: #E6553B;
+    }
+}
 .nav-link{
     color: #808080;
     span{
@@ -40,3 +44,57 @@
         color: black;
     }
 }
+
+.artist-artworks-img{
+    width: 263px;
+    height: 270px;
+    background-size: cover;
+    background-position: center center;
+
+    &-1{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art26.jpg?raw=true);
+    }
+
+    &-2{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art27.jpg?raw=true);
+    }
+    &-3{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art28.jpg?raw=true);
+    }
+    &-4{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art29.jpg?raw=true);
+    }
+    &-5{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art25.jpg?raw=true);
+    }
+    &-6{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art24.jpg?raw=true);
+    }
+    &-7{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art23.jpg?raw=true);
+    }
+    &-8{
+        background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art22.jpg?raw=true);
+    }
+
+
+    &-md{
+        display: block;
+
+        @media(min-width: 992px){
+            display: none;
+        }
+    }
+
+    &-lg{
+        display: none;
+        @media(min-width: 992px){
+            display: flex;
+            bottom: -48px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+}
+
+

@@ -19,10 +19,10 @@ current: artist
             <div class="d-flex justify-content-between align-items-center mb-2 mb-lg-5">
               <h2 class="card-title fs-1 ff-s">Michael</h2>
               <div class="d-flex">
-                <i class="fa-brands fa-discord me-2"></i>
-                <i class="fa-brands fa-facebook-f me-2"></i>
-                <i class="fa-solid fa-globe me-2"></i>
-                <i class="fa-brands fa-twitter me-2"></i>
+                <a href="#" class="btn social-link p-0"><i class="fa-brands fa-discord me-2"></i></a>
+                <a href="#" class="btn social-link p-0"><i class="fa-brands fa-facebook-f me-2"></i></a>
+                <a href="#" class="btn social-link p-0"><i class="fa-solid fa-globe me-2"></i></a>
+                <a href="#" class="btn social-link p-0"><i class="fa-brands fa-twitter me-2"></i></a>
               </div>
             </div>
             <p class="card-text ff-s mb-5">0x3ya666…88ef</p>
@@ -83,35 +83,74 @@ current: artist
   <div class="tab-content mb-13 mb-lg-25">
     <!-- 作品分頁 -->
     <div class="tab-pane active" id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
-      <div class="card px-5 py-10 border mb-5">
-        <div class="triangle-left-top"></div>
-          <div class="triangle-right-top"></div>
-          <div class="card-body p-0">
-            <h3 class="card-title mb-5">追求者送我的花</h3>
-            <p class="mb-8">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg?raw=true" class="card-img-top border border-10 mb-5" alt="追求者送我的花系列">
-            <div class="d-flex justify-content-center">
-              <a href="#" class="btn btn-customized ff-s fs-5 ">MORE</a>
-            </div>
-        </div>
+          <!-- 作品系列一 -->
+<div class="container border position-relative mb-20">
+  <div class="triangle-left-top"></div>
+  <div class="triangle-right-top"></div>
+
+  <div class="row justify-content-center align-items-end  px-5 py-10">
+
+    <div class="col-lg-8">
+      <h3 class="card-title fw-bold mb-5">追求者送我的花</h3>
+      <p class=" mb-8 mb-lg-270">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+    </div>
+    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/the-new-york-public-library-vBejyCBXZBY-unsplash.jpg?raw=true" class="card-img-top border border-10 mb-5 artist-artworks-img-md" alt="追求者送我的花系列">
+    <div class="col-lg-2">
+      <div class="d-flex justify-content-center mb-lg-270">
+        <a href="#" class="btn btn-customized ff-s fs-5 ">MORE</a>
       </div>
-      <div class="card px-5 py-10 border">
-        <div class="triangle-left-top"></div>
-          <div class="triangle-right-top"></div>
-          <div class="card-body p-0">
-            <h3 class="card-title mb-5">我家窗前的鳥</h3>
-            <p class="mb-8">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。  </p>
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art20.jpg?raw=true" class="card-img-top border border-10 mb-5" alt="追求者送我的花系列">
-            <div class="d-flex justify-content-center">
-              <a href="#" class="btn btn-customized ff-s fs-5 ">MORE</a>
-            </div>
-        </div>
-      </div>    
+    </div>
+
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="position-absolute artist-artworks-img-lg">
+        <div class="artist-artworks-img artist-artworks-img-1 border border-10 me-2"></div>
+        <div class="artist-artworks-img artist-artworks-img-2 border border-10 me-2"></div>
+        <div class="artist-artworks-img artist-artworks-img-3 border border-10 me-2"></div>
+        <div class="artist-artworks-img artist-artworks-img-4 border border-10"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 作品系列二 -->
+<div class="container border position-relative">
+  <div class="triangle-left-top"></div>
+  <div class="triangle-right-top"></div>
+
+  <div class="row justify-content-center align-items-end  px-5 py-10">
+
+    <div class="col-lg-8">
+      <h3 class="card-title fw-bold mb-5">我家窗前的鳥</h3>
+      <p class=" mb-8 mb-lg-270">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+    </div>
+    <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art24.jpg?raw=true" class="card-img-top border border-10 mb-5 artist-artworks-img-md" alt="追求者送我的花系列">
+    <div class="col-lg-2">
+      <div class="d-flex justify-content-center mb-lg-270">
+        <a href="#" class="btn btn-customized ff-s fs-5 ">MORE</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="position-absolute artist-artworks-img-lg">
+        <div class="artist-artworks-img artist-artworks-img-5 border border-10 me-2"></div>
+        <div class="artist-artworks-img artist-artworks-img-6 border border-10 me-2"></div>
+        <div class="artist-artworks-img artist-artworks-img-7 border border-10 me-2"></div>
+        <div class="artist-artworks-img artist-artworks-img-8 border border-10"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
     </div>
     <!-- 作品分頁END -->
    
     <!-- 收藏分頁 -->
-    <div class="tab-pane" id="collection" role="tabpanel" aria-labelledby="profile-tab">    
+    <div class="tab-pane mb-20" id="collection" role="tabpanel" aria-labelledby="profile-tab">    
       <div class="row newPieces mb-12 mb-lg-18" data-masonry='{"percentPosition": true }'>
     
         <!-- 最新一 -->
@@ -232,10 +271,4 @@ current: artist
 
   </div>
 </div>
-
-
-<div class="container">
-
-</div>
-
 
