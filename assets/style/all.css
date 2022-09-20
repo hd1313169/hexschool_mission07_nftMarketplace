@@ -18741,7 +18741,7 @@ h1, .h1 {
         -ms-flex-align: center !important;
             align-items: center !important;
     height: 439px !important;
-    width: 23.6% !important;
+    width: 22% !important;
     -webkit-filter: grayscale(0.9);
             filter: grayscale(0.9);
   }
@@ -18749,7 +18749,7 @@ h1, .h1 {
     display: none;
   }
   .swiper-slide-active {
-    width: 49% !important;
+    width: 48% !important;
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
   }
@@ -18872,6 +18872,13 @@ h1, .h1 {
 
 .artist-artworks-img-8 {
   background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week8-202207/art22.jpg?raw=true);
+}
+
+@media (min-width: 992px) {
+  .artist-artworks-img {
+    width: 240px;
+    width: 240px;
+  }
 }
 
 .artist-artworks-img-md {
